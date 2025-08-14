@@ -1,4 +1,4 @@
-exportdefaultasyncfunction handler(req, res) {
+export default async function handler(req, res) {
   try {
     const q = req?.query || {};
     const date = q.date || new Date().toISOString().slice(0, 10);

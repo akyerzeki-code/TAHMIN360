@@ -1,0 +1,62 @@
+/* Basit koyu tema ve liste görünümü */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #eaeaea;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Sayfa iskeleti */
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 56px;
+}
+.brand {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .3px;
+  margin: 6px 0 16px;
+}
+
+/* Liste */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  background: #121212;
+  border: 1px solid #212121;
+  border-radius: 12px;
+}
+.left {
+  font-size: 14px;
+  color: #d8d8d8;
+}
+.right {
+  min-width: 88px;
+  text-align: right;
+  font-weight: 700;
+  color: #ffffff;
+}
+.muted {
+  opacity: .7;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* Mobil uyum */
+@media (max-width: 480px) {
+  .item { padding: 12px; }
+  .left { font-size: 13px; }
+  .right { min-width: 72px; font-size: 13px; }
+}
